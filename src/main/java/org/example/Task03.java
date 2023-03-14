@@ -22,12 +22,12 @@ public class Task03 {
         for (int i = 0; i < arrayList.size(); i++) {
             try {
                 n = Integer.parseInt(arrayList.get(i));
-
+                arrayList.remove(i);
             } catch (NumberFormatException e) {
 
-                System.out.println(arrayList.get(i));
-            }
+                }
 
         }
+        System.out.println(arrayList);
     }
 }
